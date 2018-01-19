@@ -29,6 +29,7 @@ html, body {
   margin: 6px;
   border-radius: 2px;
   border: 0;
+  visibility: hidden;
 }
 
 #info {
@@ -42,8 +43,10 @@ html, body {
   margin: 6px;
   border-radius: 2px;
   border: 0;
+  visibility: hidden;
 }
 
 .gameBtn {
   width: 190px;
+  visibility: hidden;
 }

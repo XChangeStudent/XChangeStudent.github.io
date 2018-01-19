@@ -8,9 +8,27 @@ function prepareGame(jQuery)
     */
     loadScriptForGame('game.js', function(){
       console.log("Game Class is Loaded");
+      window.Game = new Game();
+      window.Game.run();
     });
 }
 
+
+function SaveGame(g)
+{
+  var save = JSON.stringify(g);
+  window.localStorage['XChangeSave'] = save;
+}
+
+function LoadGame()
+{
+  window.Game = JSON.parse(window.localStorage['XChangeSave']);
+  window.Game.resume();
+}
+
+/*
+HELPERS
+*/
 function loadScriptForGame(url, callback)
 {
   jQuery.ajax(
