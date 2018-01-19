@@ -2,6 +2,15 @@ var Game = null;
 
 function prepareGame(jQuery)
 {
+  $("#Save").click(function()
+  {
+    if (!window.Game)
+      SaveGame(window.Game);
+  });
+  $("#Load").click(function()
+  {
+    LoadGame();
+  });
   /*First we laod the Game Objet
     This objet will record a lot of variable.
     Like in wich step we are the choice we mad
@@ -18,6 +27,7 @@ function SaveGame(g)
 {
   var save = JSON.stringify(g);
   window.localStorage['XChangeSave'] = save;
+  alert('Game Saved in localStorage')
 }
 
 function LoadGame()
