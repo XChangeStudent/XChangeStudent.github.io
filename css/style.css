@@ -40,7 +40,7 @@ html, body {
   padding-right: 0.85rem;
   padding-bottom: 0.85rem;
   padding-left: 0.85rem;
-  margin: 6px;
+  margin-top: 25px;
   border-radius: 2px;
   border: 0;
   visibility: hidden;
@@ -49,4 +49,16 @@ html, body {
 .gameBtn {
   width: 190px;
   visibility: hidden;
+}
+
+
+#Save {
+	position: absolute;
+  width: 95px;
+}
+
+#Load {
+	position: absolute;
+  width: 95px;
+  margin-left: 100px
 }

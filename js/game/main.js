@@ -9,7 +9,6 @@ function prepareGame(jQuery)
     and to load or save a game state.
     */
     loadScriptForGame('game.js', function(){
-      console.log("Game Class is Loaded");
       window.Game = new Game();
       window.Game.run();
     });
