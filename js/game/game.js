@@ -27,5 +27,5 @@ function resume() {
 
 
 function play(g) {
-  alert("Error play function isn't override by a StepX.js file"),
+  alert("Error play function isn't override by a StepX.js file");
 }

@@ -1,4 +1,4 @@
-game = null;
+var window.Game = null;
 
 function prepareGame(jQuery)
 {
@@ -10,8 +10,8 @@ function prepareGame(jQuery)
     */
     loadScriptForGame('game.js', function(){
       console.log("Game Class is Loaded");
-      game = new Game();
-      window.game.run();
+      window.Game = new Game();
+      window.Game.run();
     });
 }
 
@@ -23,8 +23,8 @@ function SaveGame(g)
 
 function LoadGame()
 {
-  window.game = JSON.parse(window.localStorage['XChangeSave']);
-  window.game.resume();
+  window.Game = JSON.parse(window.localStorage['XChangeSave']);
+  window.Game.resume();
 }
 
 /*
@@ -40,7 +40,5 @@ function loadScriptForGame(url, callback)
       async: true
     });
 }
-
-
 
 $(document).ready(prepareGame);
