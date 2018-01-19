@@ -25,6 +25,9 @@ html, body {
   width: 190px;
 }
 
+#info {
+	height: 200px;
+}
 
 .gameBtn {
   width: 190px;
