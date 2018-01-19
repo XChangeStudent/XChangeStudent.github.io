@@ -11,6 +11,8 @@ function prepareGame(jQuery)
   {
     LoadGame();
   });
+  InitSelector();
+
   /*First we laod the Game Objet
     This objet will record a lot of variable.
     Like in wich step we are the choice we mad
@@ -21,6 +23,23 @@ function prepareGame(jQuery)
       window.Game = new Game();
       window.Game.run();
     });
+}
+
+function InitSelector()
+{
+  window.RollDice = $("#RollDice");
+  window.ComboBox = $("#ComboBox");
+  window.UseCombo = $("#UseCombo");
+  window.CancelBtn = $("#CancelBtn");
+  window.ValidBtn = $("#ValidBtn");
+  window.ImgBox = $("#ImgBox");
+  window.VideoBox = $("#VideoBox");
+
+  window.ValidBtn.click(function()
+  {
+    window.Game.ValidBtnClick();
+  });
+
 }
 
 function SaveGame(g)
@@ -39,6 +58,17 @@ function LoadGame()
 /*
 HELPERS
 */
+function HideAll()
+{
+  window.RollDice.hide();
+  window.ComboBox.hide();
+  window.UseCombo.hide();
+  window.CancelBtn.hide();
+  window.ValidBtn.hide();
+  window.ImgBox.hide();
+  window.VideoBox.hide();
+}
+
 function loadScriptForGame(url, callback)
 {
   jQuery.ajax(

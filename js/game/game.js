@@ -3,6 +3,8 @@ function Game ()
     this.step = 1;
     this.subStep = 1;
     this.run = run;
+    this.play = play;
+    this.resume = resume;
 }
 
 function run() {
@@ -10,7 +12,6 @@ function run() {
     play(this);
   });
 }
-
 
 function resume() {
   var fileName = 'Step';
@@ -25,7 +26,10 @@ function resume() {
   });
 }
 
-
 function play(g) {
   alert("Error play function isn't override by a StepX.js file");
+}
+
+function ValidBtnClick() {
+  alert("Error ValidBtnClick function isn't override by a StepX.js file");
 }
