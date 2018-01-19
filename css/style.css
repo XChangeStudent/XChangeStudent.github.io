@@ -23,6 +23,14 @@ html, body {
 
 #ComboBox {
   width: 190px;
+  padding: .85rem 2.13rem;
+  padding-top: 0.85rem;
+  padding-right: 2.13rem;
+  padding-bottom: 0.85rem;
+  padding-left: 2.13rem;
+  margin: 6px;
+  border-radius: 2px;
+  border: 0;
 }
 
 #info {
