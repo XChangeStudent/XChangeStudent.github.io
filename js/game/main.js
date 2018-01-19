@@ -2,6 +2,7 @@ var Game = null;
 
 function prepareGame(jQuery)
 {
+  alert('sa boucle?');
   $("#Save").click(function()
   {
     if (window.Game)
