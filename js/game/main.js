@@ -1,4 +1,4 @@
-var window.Game = null;
+var Game = null;
 
 function prepareGame(jQuery)
 {
