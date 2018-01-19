@@ -51,14 +51,17 @@ html, body {
   visibility: hidden;
 }
 
-
-#Save {
-	position: absolute;
+.menuBtn
+{
+  position: absolute;
   width: 95px;
+  padding: 0.85rem 0.85rem;
+  padding-top: 0.85rem;
+  padding-right: 0.85rem;
+  padding-bottom: 0.85rem;
+  padding-left: 0.85rem;
 }
 
-#Load {
-	position: absolute;
-  width: 95px;
+#Load {  
   margin-left: 100px
 }
