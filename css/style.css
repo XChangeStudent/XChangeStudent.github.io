@@ -21,6 +21,11 @@ html, body {
 	background: black;
 }
 
+#ComboBox {
+  width: 190px;
+}
+
+
 .gameBtn {
-  width: 150px;
+  width: 190px;
 }
