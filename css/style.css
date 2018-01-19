@@ -20,3 +20,7 @@ html, body {
 	height: 100%;
 	background: black;
 }
+
+.gameBtn {
+  width: 150px;
+}
