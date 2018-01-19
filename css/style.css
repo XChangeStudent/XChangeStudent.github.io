@@ -4,7 +4,7 @@ html, body {
 
 #game {
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
     position: relative;
 }
 
@@ -34,7 +34,7 @@ html, body {
 }
 
 #info {
-	height: 200px;
+	height: 400px;
 }
 
 .gameBtn {
