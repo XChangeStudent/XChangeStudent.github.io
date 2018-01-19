@@ -27,7 +27,7 @@ function SaveGame(g)
 {
   var save = JSON.stringify(g);
   window.localStorage['XChangeSave'] = save;
-  alert('Game Saved in localStorage')
+  alert('Game Saved in localStorage');
 }
 
 function LoadGame()
