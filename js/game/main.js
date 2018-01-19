@@ -1,3 +1,5 @@
+game = null;
+
 function prepareGame(jQuery)
 {
   /*First we laod the Game Objet
@@ -8,11 +10,10 @@ function prepareGame(jQuery)
     */
     loadScriptForGame('game.js', function(){
       console.log("Game Class is Loaded");
-      window.Game = new Game();
-      window.Game.run();
+      game = new Game();
+      window.game.run();
     });
 }
-
 
 function SaveGame(g)
 {
@@ -22,8 +23,8 @@ function SaveGame(g)
 
 function LoadGame()
 {
-  window.Game = JSON.parse(window.localStorage['XChangeSave']);
-  window.Game.resume();
+  window.game = JSON.parse(window.localStorage['XChangeSave']);
+  window.game.resume();
 }
 
 /*
@@ -39,5 +40,7 @@ function loadScriptForGame(url, callback)
       async: true
     });
 }
+
+
 
 $(document).ready(prepareGame);
