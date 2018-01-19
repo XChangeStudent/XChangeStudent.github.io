@@ -4,7 +4,7 @@ function prepareGame(jQuery)
 {
   $("#Save").click(function()
   {
-    if (!window.Game)
+    if (window.Game)
       SaveGame(window.Game);
   });
   $("#Load").click(function()
