@@ -7,7 +7,7 @@ function Game ()
 
 function run() {
   loadScriptForGame('Step01.js', function(){
-    play(g);
+    play(this);
   });
 }
 
@@ -21,7 +21,7 @@ function resume() {
   fileName += this.step + '.js';
 
   loadScriptForGame(fileName, function(){
-    play(g);
+    play(this);
   });
 }
 
