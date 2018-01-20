@@ -68,7 +68,6 @@ RollDiceClick = function () {
 }
 
 ValidBtnClick = function () {
-  window.Game.subStep = 1;
-  window.Game.step = 3;
-  play(window.Game);
+  if (!MustChangeStep(1))
+    play(window.Game);
 }

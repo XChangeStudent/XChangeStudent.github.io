@@ -72,7 +72,7 @@ function InitFunction()
 
   RollDiceClick = function () {
     alert("Error RollDiceClick function isn't override by a StepX.js file");
-  }  
+  }
 }
 
 /*
@@ -100,6 +100,23 @@ function HideAll()
   window.VideoBox.hide();
   window.Info.hide();
 }
+
+
+MustChangeStep = function (n) {
+  if(window.Game.subStep == n)
+  {
+    window.Game.subStep = 1;
+    window.Game.step++;
+    run();
+    return true;
+  }
+  else
+  {
+    window.Game.subStep++;
+    return false;
+  }
+}
+
 
 function loadScriptForGame(url, callback)
 {
