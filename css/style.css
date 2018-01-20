@@ -29,7 +29,6 @@ html, body {
   margin: 6px;
   border-radius: 2px;
   border: 0;
-  visibility: hidden;
 }
 
 #info {
@@ -43,12 +42,10 @@ html, body {
   margin-top: 25px;
   border-radius: 2px;
   border: 0;
-  visibility: hidden;
 }
 
 .gameBtn {
   width: 190px;
-  visibility: hidden;
 }
 
 .menuBtn
@@ -62,6 +59,6 @@ html, body {
   padding-left: 0.85rem;
 }
 
-#Load {  
+#Load {
   margin-left: 100px
 }

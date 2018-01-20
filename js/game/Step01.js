@@ -4,7 +4,6 @@ play = function(g)
   HideAll();
   window.ValidBtn.html('Next');
   window.ValidBtn.show();
-  alert(g.subStep);
   switch (g.subStep)
   {
     case 1:
