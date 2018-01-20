@@ -3,9 +3,7 @@ function Game ()
     this.step = 1;
     this.subStep = 1;
     this.run = run;
-    this.play = play;
     this.resume = resume;
-    this.ValidBtnClick = ValidBtnClick;
 }
 
 function run() {
