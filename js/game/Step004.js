@@ -19,12 +19,12 @@ play = function(g)
 };
 
 UseComboClick = function () {
-  selectFeature(window.ComboBox.val());
+  selectFeature(window.ComboBox.val(), window.Game);
   window.Game.sideEffectToRoll++;
   play(window.Game);
 }
 
-function selectFeature(t)
+function selectFeature(t, g)
 {
   switch (t)
   {
