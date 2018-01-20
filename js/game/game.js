@@ -3,7 +3,9 @@ function Game ()
     this.step = 1;
     this.subStep = 1;
 
+    this.bodyType = 'Standard';
     this.sideEffectToRoll = 0;
+    this.Method = 'None';
 
     this.NoBodyHair = false;
     this.WeightControl = false;

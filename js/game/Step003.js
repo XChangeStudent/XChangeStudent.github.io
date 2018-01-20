@@ -45,7 +45,7 @@ RollDiceClick = function () {
   switch (roll)
   {
       case 1:
-        window.Method = 'Condom';
+        window.Game.Method = 'Condom';
         window.Info.append('Bad luck for you... all left is condom if you want to use it after all.<br />');
         src = path + '2.mp4';
         window.Game.subStep++;
@@ -58,12 +58,12 @@ RollDiceClick = function () {
         window.Info.append('It didn\'t work but you can still choose another way.<br />');
         break;
       case 7: case 8: case 9: case 10: case 11: case 12: case 13:
-        window.Method = 'PillImplant';
+        window.Game.Method = 'PillImplant';
         window.Info.append('So you are on Pill but can\'t forget it!<br />');
         window.Game.subStep++;
         break;
      case 14: case 15: case 16: case 17: case 18: case 19: case 20:
-        window.Method = 'Implant';
+        window.Game.Method = 'Implant';
         window.Info.append('Lucky you! You are safe.... Maybe not so lucky after all.<br />');
         window.Game.subStep++;
         break;
@@ -79,7 +79,7 @@ RollDiceClick = function () {
 ValidBtnClick = function () {
   if (!MustChangeStep(2))
   {
-    window.Method = 'Condom';
+    window.Game.Method = 'Condom';
     window.Info.append('You choose to use the condom you can choose to stop it anytime you want to!<br />');
     play(window.Game);
   }
@@ -88,7 +88,7 @@ ValidBtnClick = function () {
 CancelBtnClick = function () {
   if (!MustChangeStep(2))
   {
-    window.Method = 'Pill';
+    window.Game.Method = 'Pill';
     window.Info.append('You choose to use the pill you can choose to stop it anytime you want to!<br />');
     play(window.Game);
   }
