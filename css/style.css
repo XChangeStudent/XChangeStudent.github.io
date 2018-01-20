@@ -39,9 +39,13 @@ html, body {
   padding-right: 0.85rem;
   padding-bottom: 0.85rem;
   padding-left: 0.85rem;
-  margin-top: 25px;
   border-radius: 2px;
   border: 0;
+}
+
+#gameMenu
+{
+  margin-top: 30px;
 }
 
 .gameBtn {
