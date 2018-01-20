@@ -46,7 +46,7 @@ RollDiceClick = function () {
       case 1:
         window.Method = 'Condom';
         window.Info.append('Bad luck for you... all left is condom if you want to use it after all.<br />');
-        src = path + '2.mp4');
+        src = path + '2.mp4';
         window.Game.subStep++;
         break;
       case 2: case 3: case 4: case 5: case 6:
