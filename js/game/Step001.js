@@ -22,6 +22,13 @@ play = function(g)
 };
 
 ValidBtnClick = function () {
-  window.Game.subStep++;
+  if(window.Game.subStep == 2)
+  {
+    window.Game.subStep = 1;
+    window.Game.step = 2;  
+  }
+  else {
+    window.Game.subStep++;
+  }
   play(window.Game);
 }

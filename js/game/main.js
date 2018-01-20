@@ -30,6 +30,7 @@ function InitSelector()
   window.ValidBtn = $("#ValidBtn");
   window.ImgBox = $("#ImgBox");
   window.VideoBox = $("#VideoBox");
+  window.Info = $("#Info");
 
   window.ValidBtn.click(function()
   {
@@ -74,6 +75,12 @@ function padZero (str, max) {
   return str.length < max ? padZero("0" + str, max) : str;
 }
 
+function rollDice (faces)
+{
+    var randomNumber = Math.floor(Math.random() * faces) + 1;
+    return randomNumber;
+}
+
 function HideAll()
 {
   window.RollDice.hide();
@@ -82,7 +89,8 @@ function HideAll()
   window.CancelBtn.hide();
   window.ValidBtn.hide();
   window.ImgBox.hide();
-  window.VideoBox.hide();
+  window.VideoBox.hide();  
+  window.Info.hide();
 }
 
 function loadScriptForGame(url, callback)
