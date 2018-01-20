@@ -5,6 +5,7 @@ function Game ()
     this.run = run;
     this.play = play;
     this.resume = resume;
+    this.ValidBtnClick = ValidBtnClick;
 }
 
 function run() {

@@ -3,8 +3,8 @@ var Loaded = false;
 
 function prepareGame(jQuery)
 {
-  alert('sa boucle?');
-  if (!Loaded)
+  console.log('sa boucle?');
+  //if (!Loaded)
   {
     Loaded = true;
     $("#Save").click(function()
