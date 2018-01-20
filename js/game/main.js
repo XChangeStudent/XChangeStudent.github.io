@@ -65,6 +65,14 @@ function InitFunction()
   ValidBtnClick = function () {
     alert("Error ValidBtnClick function isn't override by a StepX.js file");
   }
+
+  UseComboClick = function () {
+    alert("Error UseComboClick function isn't override by a StepX.js file");
+  }
+
+  RollDiceClick = function () {
+    alert("Error RollDiceClick function isn't override by a StepX.js file");
+  }  
 }
 
 /*
@@ -89,7 +97,7 @@ function HideAll()
   window.CancelBtn.hide();
   window.ValidBtn.hide();
   window.ImgBox.hide();
-  window.VideoBox.hide();  
+  window.VideoBox.hide();
   window.Info.hide();
 }
 
