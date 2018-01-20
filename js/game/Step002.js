@@ -19,7 +19,7 @@ play = function(g)
 function buildTypeChoice ()
 {
   window.Info.empty();
-  window.ComboBox.empty();
+  window.ComboBox.empty()
   .append("<option value="Standard">Standard</option>")
   .append("<option value="Plus-size">Plus-size</option>")
   .append("<option value="Petite">Petite</option>")
