@@ -1,5 +1,6 @@
 play = function(g)
 {
+  console.log('On a play Step01.js');
   HideAll();
   window.ValidBtn.html('Next');
   window.ValidBtn.show();

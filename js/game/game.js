@@ -9,6 +9,7 @@ function Game ()
 
 function run() {
   loadScriptForGame('Step01.js', function(){
+    console.log('On a load Step01.js');
     play(this);
   });
 }

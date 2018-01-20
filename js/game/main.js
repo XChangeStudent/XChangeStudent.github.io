@@ -19,6 +19,7 @@ function prepareGame(jQuery)
     InitSelector();
 
     loadScriptForGame('game.js', function(){
+      console.log('On a load game.js');
       window.Game = new Game();
       window.Game.run();
     });
