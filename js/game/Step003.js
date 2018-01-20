@@ -71,6 +71,7 @@ RollDiceClick = function () {
         break;
   }
   window.VideoBox.children("source").attr('src', src);
+  window.VideoBox.show();
 }
 
 ValidBtnClick = function () {
