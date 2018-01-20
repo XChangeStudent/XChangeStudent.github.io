@@ -70,7 +70,7 @@ RollDiceClick = function () {
         alert("Error unknow case!");
         break;
   }
-  window.VideoBox.attr('src', src);
+  window.VideoBox.children("source").attr('src', src);
 }
 
 ValidBtnClick = function () {
