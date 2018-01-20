@@ -16,16 +16,10 @@ function prepareGame(jQuery)
     });
     InitSelector();
 
-    /*First we laod the Game Objet
-      This objet will record a lot of variable.
-      Like in wich step we are the choice we mad
-      it will help to only show usefull caption
-      and to load or save a game state.
-      */
-      loadScriptForGame('game.js', function(){
-        window.Game = new Game();
-        window.Game.run();
-      });
+    loadScriptForGame('game.js', function(){
+      window.Game = new Game();
+      window.Game.run();
+    });  
   }
 }
 
