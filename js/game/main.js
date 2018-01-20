@@ -1,10 +1,12 @@
 var Game = null;
+var Loaded = false;
 
 function prepareGame(jQuery)
 {
   alert('sa boucle?');
-  if (!window.Game)
+  if (!Loaded)
   {
+    Loaded = true;
     $("#Save").click(function()
     {
       if (window.Game)
@@ -19,7 +21,7 @@ function prepareGame(jQuery)
     loadScriptForGame('game.js', function(){
       window.Game = new Game();
       window.Game.run();
-    });  
+    });
   }
 }
 
