@@ -57,7 +57,7 @@ RollDiceClick = function () {
         window.Info.append('It didn\'t work but you can still choose another way.<br />');
         break;
       case 7: case 8: case 9: case 10: case 11: case 12: case 13:
-        window.Method = 'Pill';
+        window.Method = 'PillImplant';
         window.Info.append('So you are on Pill but can\'t forget it!<br />');
         window.Game.subStep++;
         break;
