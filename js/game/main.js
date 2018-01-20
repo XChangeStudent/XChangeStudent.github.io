@@ -107,6 +107,12 @@ function rollDice (faces)
     return randomNumber;
 }
 
+function hasSideEffect(g)
+{
+  if (g.Permanant == 1)
+    return true;
+}
+
 function HideAll()
 {
   window.RollDice.hide();

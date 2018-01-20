@@ -57,27 +57,48 @@ function selectFeature(t, g)
 function buildFeatureChoice (g)
 {
   window.ComboBox.empty();
+  var showCombo = false;
   if(!g.NoBodyHair)
+  {
+    showCombo = true;
     window.ComboBox.append('<option value="NoBodyHair">No Body Hair</option>');
+  }
   if(!g.WeightControl)
+  {
+    showCombo = true;
     window.ComboBox.append('<option value="WeightControl">Weight Control</option>');
+  }
   if(!g.ReducedSleep)
+  {
+    showCombo = true;
     window.ComboBox.append('<option value="ReducedSleep">Reduced Sleep</option>');
+  }
   if(!g.EasyToOrgasm)
+  {
+    showCombo = true;
     window.ComboBox.append('<option value="EasyToOrgasm">Easy To Orgasm</option>');
+  }
   if(!g.PowerfullOrgasms)
+  {
+    showCombo = true;
     window.ComboBox.append('<option value="PowerfullOrgasms">Powerfull Orgasms</option>');
-  window.ComboBox.show();
-  window.UseCombo.html('Add a Feature');
-  window.UseCombo.show();
+  }
+
+  if (showCombo)
+  {
+    window.UseCombo.html('Add a Feature');
+    window.UseCombo.show();
+    window.ComboBox.show();
+  }
   window.Info.show();
   if (window.Game.sideEffectToRoll > 0)
   {
     window.RollDice.html('Roll 1D20');
-    window.Info.append('You have '+ window.Game.sideEffectToRoll + ' to Roll.<br />');
+    window.Info.append('You have '+ window.Game.sideEffectToRoll + ' Side Effect  to Roll.<br />');
     window.RollDice.show();
   }
-  else {
+  else
+  {
     window.ValidBtn.html('Next');
     window.ValidBtn.show();
   }
