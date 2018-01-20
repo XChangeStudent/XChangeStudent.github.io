@@ -3,27 +3,30 @@ var Game = null;
 function prepareGame(jQuery)
 {
   alert('sa boucle?');
-  $("#Save").click(function()
+  if (!window.Game)
   {
-    if (window.Game)
-      SaveGame(window.Game);
-  });
-  $("#Load").click(function()
-  {
-    LoadGame();
-  });
-  InitSelector();
-
-  /*First we laod the Game Objet
-    This objet will record a lot of variable.
-    Like in wich step we are the choice we mad
-    it will help to only show usefull caption
-    and to load or save a game state.
-    */
-    loadScriptForGame('game.js', function(){
-      window.Game = new Game();
-      window.Game.run();
+    $("#Save").click(function()
+    {
+      if (window.Game)
+        SaveGame(window.Game);
     });
+    $("#Load").click(function()
+    {
+      LoadGame();
+    });
+    InitSelector();
+
+    /*First we laod the Game Objet
+      This objet will record a lot of variable.
+      Like in wich step we are the choice we mad
+      it will help to only show usefull caption
+      and to load or save a game state.
+      */
+      loadScriptForGame('game.js', function(){
+        window.Game = new Game();
+        window.Game.run();
+      });
+  }
 }
 
 function InitSelector()
