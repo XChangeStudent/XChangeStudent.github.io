@@ -18,7 +18,6 @@ play = function(g)
 
 function buildTypeChoice ()
 {
-  window.Info.empty();
   window.ComboBox.empty();
   window.ComboBox.append('<option value="Standard">Standard</option>');
   window.ComboBox.append('<option value="Plus-size">Plus-size</option>');
@@ -39,7 +38,6 @@ function selectBodyType(t) {
   window.Info.append('You got the ' + t + ' body type!');
   window.Game.bodyType = t;
   window.ImgBox.show();
-  window.Info.show();
   window.ValidBtn.html('Next');
   window.ValidBtn.show();
 }

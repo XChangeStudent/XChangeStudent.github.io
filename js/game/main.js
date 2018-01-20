@@ -107,7 +107,7 @@ function HideAll()
   window.ValidBtn.hide();
   window.ImgBox.hide();
   window.VideoBox.hide();
-  window.Info.css("visibility", "hidden")
+  window.Info.empty();
 }
 
 
