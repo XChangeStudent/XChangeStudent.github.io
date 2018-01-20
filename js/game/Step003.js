@@ -38,7 +38,7 @@ RollDiceClick = function () {
   HideAll();
   var roll = rollDice(20);
   window.Info.append('You roll :' + roll + '<br />');
-  var src = path + '3.mp4');
+  var src = path + '3.mp4';
   window.ValidBtn.html('Next');
   window.ValidBtn.show();
   switch (roll)
