@@ -73,7 +73,7 @@ RollDiceClick = function () {
   }
   window.VideoBox.children("source").attr('src', src);
   window.VideoBox.show();
-  window.VideoBox.load();
+  window.VideoBox.trigger('load');
 }
 
 ValidBtnClick = function () {
