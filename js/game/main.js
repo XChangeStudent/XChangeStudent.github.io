@@ -46,6 +46,11 @@ function InitSelector()
   {
     RollDiceClick();
   });
+
+  window.CancelBtn.click(function()
+  {
+    CancelBtnClick();
+  });
 }
 
 function SaveGame(g)
@@ -81,6 +86,10 @@ function InitFunction()
 
   RollDiceClick = function () {
     alert("Error RollDiceClick function isn't override by a StepX.js file");
+  }
+
+  CancelBtnClick = function () {
+    alert("Error CancelBtnClick function isn't override by a StepX.js file");
   }
 }
 

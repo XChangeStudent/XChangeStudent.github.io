@@ -18,6 +18,7 @@ play = function(g)
       window.ValidBtn.show();
       window.Info.append(msg);
       window.Info.show();
+      break;
     default:
       alert("Error unknow case!");
       break;
