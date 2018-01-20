@@ -1,4 +1,4 @@
-var path = 'img/Step01/'
+var path = 'img/Step' + padZero(window.Game.step, window.Padding)+'/';
 
 play = function(g)
 {
@@ -8,11 +8,11 @@ play = function(g)
   switch (g.subStep)
   {
     case 1:
-      window.ImgBox.attr('src', path+'1.png');
+      window.ImgBox.attr('src', path + '1.png');
       window.ImgBox.show();
       break;
     case 2:
-      window.ImgBox.attr('src', path+'2.png');
+      window.ImgBox.attr('src', path + '2.png');
       window.ImgBox.show();
       break;
     default:

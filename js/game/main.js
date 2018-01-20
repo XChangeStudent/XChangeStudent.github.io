@@ -1,4 +1,5 @@
 var Game = null;
+var Padding = 3;
 
 function prepareGame(jQuery)
 {
@@ -98,7 +99,7 @@ function loadScriptForGame(url, callback)
 }
 
 function run() {
-  var fileName = 'Step' + padZero(window.Game.step, 3) + '.js';
+  var fileName = 'Step' + padZero(window.Game.step, window.Padding) + '.js';
   loadScriptForGame(fileName, function(){
     play(window.Game);
   });
