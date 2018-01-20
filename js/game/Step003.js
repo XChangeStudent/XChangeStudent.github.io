@@ -82,7 +82,7 @@ ValidBtnClick = function () {
   }
 }
 
-CancelBtn = function () {
+CancelBtnClick = function () {
   if (!MustChangeStep(2))
   {
     window.Method = 'Pill';
