@@ -25,5 +25,5 @@ play = function(g)
 
 
 function ValidBtnClick() {
-  this.play();
+  window.Game.play();
 }

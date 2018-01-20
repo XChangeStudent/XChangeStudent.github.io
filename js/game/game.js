@@ -10,20 +10,20 @@ function Game ()
 function run() {
   loadScriptForGame('Step01.js', function(){
     console.log('On a load Step01.js');
-    play(this);
+    play(window.Game);
   });
 }
 
 function resume() {
   var fileName = 'Step';
-  if (this.step < 10)
+  if (window.Game.step < 10)
   {
     fileName += '0';
   }
-  fileName += this.step + '.js';
+  fileName += window.Game.step + '.js';
 
   loadScriptForGame(fileName, function(){
-    play(this);
+    play(window.Game);
   });
 }
 
