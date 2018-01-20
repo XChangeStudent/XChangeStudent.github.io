@@ -23,6 +23,6 @@ play = function(g)
 };
 
 
-function ValidBtnClick() {
+ValidBtnClick = function () {
   window.Game.play();
 }
