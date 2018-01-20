@@ -31,6 +31,7 @@ function buildTypeChoice ()
 }
 
 UseComboClick = function () {
+  HideAll();
   selectBodyType(window.ComboBox.val());
 }
 
@@ -43,6 +44,7 @@ function selectBodyType(t) {
 }
 
 RollDiceClick = function () {
+  HideAll();
   var roll = rollDice(20);
   window.Info.append('You roll :' + roll + '<br />');
   switch (roll)
