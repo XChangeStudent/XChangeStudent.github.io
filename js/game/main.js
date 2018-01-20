@@ -37,6 +37,15 @@ function InitSelector()
     ValidBtnClick();
   });
 
+  window.UseCombo.click(function()
+  {
+    UseComboClick();
+  });
+
+  window.RollDice.click(function()
+  {
+    RollDiceClick();
+  });
 }
 
 function SaveGame(g)
