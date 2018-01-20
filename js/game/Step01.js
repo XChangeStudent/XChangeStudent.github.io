@@ -9,12 +9,10 @@ play = function(g)
     case 1:
       window.ImgBox.attr('src', 'img/Step01/1.png');
       window.ImgBox.show();
-      g.subStep = 2;
       break;
     case 2:
       window.ImgBox.attr('src', 'img/Step01/2.png');
       window.ImgBox.show();
-      g.subStep = 3;
       break;
     default:
       alert("Error unknow case!");
@@ -23,5 +21,6 @@ play = function(g)
 };
 
 ValidBtnClick = function () {
+  window.Game.subStep++;
   play(window.Game);
 }
