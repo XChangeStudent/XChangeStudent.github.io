@@ -125,6 +125,7 @@ MustChangeStep = function (n) {
   {
     window.Game.subStep = 1;
     window.Game.step++;
+    window.Info.empty();
     run();
     return true;
   }
