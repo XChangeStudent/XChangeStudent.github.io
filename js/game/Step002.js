@@ -20,10 +20,10 @@ function buildTypeChoice ()
 {
   window.Info.empty();
   window.ComboBox.empty();
-  window.ComboBox.append("<option value="Standard">Standard</option>");
-  window.ComboBox.append("<option value="Plus-size">Plus-size</option>");
-  window.ComboBox.append("<option value="Petite">Petite</option>");
-  window.ComboBox.append("<option value="Fit">Fit</option>");
+  window.ComboBox.append('<option value="Standard">Standard</option>');
+  window.ComboBox.append('<option value="Plus-size">Plus-size</option>');
+  window.ComboBox.append('<option value="Petite">Petite</option>');
+  window.ComboBox.append('<option value="Fit">Fit</option>');
   window.ComboBox.show();
   window.UseCombo.html('Choose your body type');
   window.UseCombo.show();
