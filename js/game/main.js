@@ -47,7 +47,7 @@ function SaveGame(g)
 function LoadGame()
 {
   window.Game = JSON.parse(window.localStorage['XChangeSave']);
-  resume();
+  run();
 }
 
 
@@ -93,13 +93,6 @@ function loadScriptForGame(url, callback)
 }
 
 function run() {
-  loadScriptForGame('Step01.js', function(){
-    console.log('On a load Step01.js');
-    play(window.Game);
-  });
-}
-
-function resume() {
   var fileName = 'Step';
   if (window.Game.step < 10)
   {
