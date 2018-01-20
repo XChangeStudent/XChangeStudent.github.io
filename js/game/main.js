@@ -51,8 +51,22 @@ function LoadGame()
 }
 
 /*
+Function redifined inside every Step
+*/
+function play(g) {
+  alert("Error play function isn't override by a StepX.js file");
+}
+
+function ValidBtnClick() {
+  alert("Error ValidBtnClick function isn't override by a StepX.js file");
+}
+
+
+/*
 HELPERS
 */
+
+
 function HideAll()
 {
   window.RollDice.hide();

@@ -22,7 +22,6 @@ play = function(g)
     }
 };
 
-
 ValidBtnClick = function () {
-  window.Game.play();
+  play();
 }
