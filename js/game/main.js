@@ -32,7 +32,7 @@ function InitSelector()
 
   window.ValidBtn.click(function()
   {
-    window.Game.ValidBtnClick();
+    ValidBtnClick();
   });
 
 }
@@ -49,8 +49,6 @@ function LoadGame()
   window.Game = JSON.parse(window.localStorage['XChangeSave']);
   window.Game.resume();
 }
-
-
 
 
 /*
