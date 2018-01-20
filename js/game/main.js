@@ -16,7 +16,7 @@ function prepareGame(jQuery)
     loadScriptForGame('game.js', function(){
       console.log('On a load game.js');
       window.Game = new Game();
-      window.Game.run();
+      run();
     });
 }
 
@@ -47,7 +47,7 @@ function SaveGame(g)
 function LoadGame()
 {
   window.Game = JSON.parse(window.localStorage['XChangeSave']);
-  window.Game.resume();
+  resume();
 }
 
 
@@ -81,6 +81,8 @@ function HideAll()
 
 function loadScriptForGame(url, callback)
 {
+  //Each time we laod another scene i reset function
+  InitFunction();
   jQuery.ajax(
     {
       url: 'js/game/'+url,
@@ -88,6 +90,26 @@ function loadScriptForGame(url, callback)
       success: callback,
       async: true
     });
+}
+
+function run() {
+  loadScriptForGame('Step01.js', function(){
+    console.log('On a load Step01.js');
+    play(window.Game);
+  });
+}
+
+function resume() {
+  var fileName = 'Step';
+  if (window.Game.step < 10)
+  {
+    fileName += '0';
+  }
+  fileName += window.Game.step + '.js';
+
+  loadScriptForGame(fileName, function(){
+    play(window.Game);
+  });
 }
 
 $(document).ready(prepareGame);
