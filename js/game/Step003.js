@@ -72,6 +72,7 @@ RollDiceClick = function () {
         break;
   }
   window.VideoBox.children("source").attr('src', src);
+  window.VideoBox.load();
   window.VideoBox.show();
 }
 
