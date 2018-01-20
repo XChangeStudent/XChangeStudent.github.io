@@ -23,5 +23,5 @@ play = function(g)
 };
 
 ValidBtnClick = function () {
-  play();
+  play(window.Game);
 }
