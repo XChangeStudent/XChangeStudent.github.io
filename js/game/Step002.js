@@ -32,6 +32,7 @@ function buildTypeChoice ()
 
 UseComboClick = function () {
   HideAll();
+  window.Game.sideEffectToRoll = 2;
   selectBodyType(window.ComboBox.val());
 }
 
