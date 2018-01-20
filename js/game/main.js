@@ -68,6 +68,11 @@ function InitFunction()
 /*
 HELPERS
 */
+function padZero (str, max) {
+  str = str.toString();
+  return str.length < max ? padZero("0" + str, max) : str;
+}
+
 function HideAll()
 {
   window.RollDice.hide();
@@ -93,13 +98,7 @@ function loadScriptForGame(url, callback)
 }
 
 function run() {
-  var fileName = 'Step';
-  if (window.Game.step < 10)
-  {
-    fileName += '0';
-  }
-  fileName += window.Game.step + '.js';
-
+  var fileName = 'Step' + padZero(window.Game.step, 3) + '.js';
   loadScriptForGame(fileName, function(){
     play(window.Game);
   });
