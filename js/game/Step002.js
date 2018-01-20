@@ -10,12 +10,6 @@ play = function(g)
       window.ImgBox.attr('src', path + '1.png');
       window.ImgBox.show();
       break;
-    case 2:
-      window.ImgBox.show();
-      window.Info.show();
-      window.ValidBtn.html('Next');
-      window.ValidBtn.show();
-      break;
     default:
       alert("Error unknow case!");
       break;
@@ -44,6 +38,8 @@ UseComboClick = function () {
 function selectBodyType(t) {
   window.Info.append('You got the ' + t + ' body type!');
   window.Game.bodyType = t;
+  window.ImgBox.show();
+  window.Info.show();
   window.ValidBtn.html('Next');
   window.ValidBtn.show();
 }
@@ -72,13 +68,7 @@ RollDiceClick = function () {
 }
 
 ValidBtnClick = function () {
-  if(window.Game.subStep == 2)
-  {
-    window.Game.subStep = 1;
-    window.Game.step = 3;
-  }
-  else {
-    window.Game.subStep++;
-  }
+  window.Game.subStep = 1;
+  window.Game.step = 3;
   play(window.Game);
 }
