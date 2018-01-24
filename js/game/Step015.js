@@ -98,7 +98,7 @@ function buildRollQualif(g)
     roll = roll + 12;
     window.Info.append('You got a fit body so your roll is up by 12 and is now ' + roll + '<br />');
   }
-  if (ReducedSleep)
+  if (g.ReducedSleep)
   {
     roll = roll + 5;
     window.Info.append('You got reduced sleep feature so your roll is up by 5 and is now ' + roll + '<br />');
