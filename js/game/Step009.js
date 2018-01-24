@@ -3,7 +3,7 @@ var path = 'img/Step' + padZero(window.Game.step, window.Padding)+'/';
 play = function(g)
 {
   HideAll();
-  if (window.Game.Mentor != 'None' && window.Game.Mentor != 'Faith')
+  if (window.Game.Mentor != 'None' && window.Game.Mentor != 'Emily')
   {
     MustChangeStep(1);
     return;
@@ -12,7 +12,7 @@ play = function(g)
   window.ValidBtn.show();
   switch (g.subStep)
   {
-    case 1: case 2: case 3:
+    case 1: case 2: case 3: case 4:
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
       break;
@@ -23,6 +23,6 @@ play = function(g)
 };
 
 ValidBtnClick = function () {
-  if (!MustChangeStep(3))
+  if (!MustChangeStep(4))
     play(window.Game);
 }

@@ -49,8 +49,8 @@ function selectMentor (m)
 
 function rollMentor (r)
 {
-  window.Info.append('You roll :' + roll + '<br />');
-  switch (roll)
+  window.Info.append('You roll :' + r + '<br />');
+  switch (r)
   {
       case 1: case 2: case 3: case 4:
         selectMentor('Faith');

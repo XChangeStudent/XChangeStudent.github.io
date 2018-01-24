@@ -3,7 +3,7 @@ var path = 'img/Step' + padZero(window.Game.step, window.Padding)+'/';
 play = function(g)
 {
   HideAll();
-  if (window.Game.Mentor != 'None' && window.Game.Mentor != 'Faith')
+  if (window.Game.Mentor != 'None' && window.Game.Mentor != 'Samantha')
   {
     MustChangeStep(1);
     return;
