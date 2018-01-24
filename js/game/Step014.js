@@ -21,7 +21,8 @@ play = function(g)
     case 2:
       if (window.Game.Mentor != 'Faith')
       {
-        MustChangeStep(10);
+        if (!MustChangeStep(10))
+          play(window.Game);
         return;
       }
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
@@ -30,7 +31,8 @@ play = function(g)
     case 3:
       if (window.Game.Mentor != 'Emily')
       {
-        MustChangeStep(10);
+        if (!MustChangeStep(10))
+          play(window.Game);
         return;
       }
       window.ImgBox.attr('src', path + g.subStep + '.png');
@@ -39,7 +41,8 @@ play = function(g)
     case 4:
       if (window.Game.Mentor != 'Hannah')
       {
-        MustChangeStep(10);
+        if (!MustChangeStep(10))
+          play(window.Game);
         return;
       }
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
@@ -48,7 +51,8 @@ play = function(g)
     case 5:
       if (window.Game.Mentor != 'Samantha')
       {
-        MustChangeStep(10);
+        if (!MustChangeStep(10))
+          play(window.Game);
         return;
       }
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
@@ -57,7 +61,8 @@ play = function(g)
     case 6:
       if (window.Game.Mentor != 'Olivia')
       {
-        MustChangeStep(10);
+        if (!MustChangeStep(10))
+          play(window.Game);
         return;
       }
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
