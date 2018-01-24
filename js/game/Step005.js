@@ -16,7 +16,7 @@ play = function(g)
       showSideEffect(roll, window.Game);
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
     }
 };
@@ -112,7 +112,7 @@ function showSideEffect (r, g)
       window.VideoBox.trigger('load');
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
   }
   window.Info.append('You roll : ' + r + ' <br />');

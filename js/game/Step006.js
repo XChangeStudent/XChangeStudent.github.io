@@ -12,7 +12,7 @@ play = function(g)
       buildRecap(g);
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
     }
 };
@@ -127,7 +127,7 @@ function buildMethodRecap(g)
       window.Info.append('Your are on condom. You can stop it if you want to be pregnant<br />');
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
   }
 }

@@ -17,7 +17,7 @@ play = function(g)
       window.ImgBox.show();
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
     }
 };

@@ -20,7 +20,7 @@ play = function(g)
       window.Info.show();
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
     }
 };
@@ -68,7 +68,7 @@ RollDiceClick = function () {
         window.Game.subStep++;
         break;
       default:
-        alert("Error unknow case!");
+        alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
         break;
   }
   window.VideoBox.children("source").attr('src', src);

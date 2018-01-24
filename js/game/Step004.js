@@ -49,7 +49,7 @@ function selectFeature(t, g)
       window.Info.append('You choose to add the Powerfull Orgasms Feature.<br />');
       break;
     default:
-      alert("Error unknow case!");
+      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
   }
 }
