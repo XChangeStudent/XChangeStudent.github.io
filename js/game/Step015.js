@@ -119,6 +119,11 @@ function buildRollQualif(g)
       window.CancelBtn.html('Give up this job');
       window.CancelBtn.show();
       break;
+    case 16: case 17: case 18: case 19: case 20:
+      g.subStep++;
+      window.ValidBtn.html('Next');
+      window.ValidBtn.show();
+      break;
     default:
       alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
