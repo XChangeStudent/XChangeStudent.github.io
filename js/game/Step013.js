@@ -3,7 +3,7 @@ var path = 'img/Step' + padZero(window.Game.step, window.Padding)+'/';
 play = function(g)
 {
   HideAll();
-  if (window.Game.Mentor != 'None')
+  if (window.Game.Mentor != 'None' && g.subStep < 2)
   {
     g.subStep++
   }
