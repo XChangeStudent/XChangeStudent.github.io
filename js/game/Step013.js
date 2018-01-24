@@ -10,7 +10,7 @@ play = function(g)
   switch (g.subStep)
   {
     case 1:
-      buildMentorCombo();
+      buildMentorCombo(g);
       break;
     case 2:
       if (window.Game.Mentor == 'Olivia')
@@ -31,7 +31,7 @@ play = function(g)
 };
 
 
-function buildMentorCombo (r)
+function buildMentorCombo (g)
 {
   window.ImgBox.attr('src', path + g.subStep + '.jpg');
   window.ImgBox.show();
