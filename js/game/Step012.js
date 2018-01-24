@@ -23,6 +23,6 @@ play = function(g)
 };
 
 ValidBtnClick = function () {
-  if (!MustChangeStep(3))
+  if (!MustChangeStep(5))
     play(window.Game);
 }

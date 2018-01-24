@@ -15,6 +15,7 @@ play = function(g)
     case 1: case 3: case 4:
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
+      break;
     case 2:
       window.ImgBox.attr('src', path + '2.gif');
       window.ImgBox.show();
