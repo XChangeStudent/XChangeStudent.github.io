@@ -62,8 +62,12 @@ function SaveGame(g)
 
 function LoadGame()
 {
-  window.Game = JSON.parse(window.localStorage['XChangeSave']);
-  run();
+  loadScriptForGame('game.js', function(){
+    window.Game = new Game();
+    var load = JSON.parse(window.localStorage['XChangeSave']);
+    window.Game = Object.assign(window.Game, load);
+    run();
+  });
 }
 
 

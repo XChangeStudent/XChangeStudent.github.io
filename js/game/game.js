@@ -24,4 +24,6 @@ function Game ()
     this.Libido = 0;
     this.HornyMorning = 0;
     this.Orgasm = 0;
+
+    this.Mentor = '';
 }
