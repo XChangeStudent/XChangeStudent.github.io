@@ -30,7 +30,7 @@ play = function(g)
     case 4:
       if (!g.Chastity || g.Pheromones == 0)
       {
-        subStep++;
+        g.subStep++;
         play(g);
       }
       else
@@ -39,13 +39,13 @@ play = function(g)
         window.ValidBtn.show();
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
-        subStep++;
+        g.subStep++;
       }
       break;
     case 5:
       if (!g.Chastity)
       {
-        subStep++;
+        g.subStep++;
         play(g);
       }
       else
@@ -55,13 +55,13 @@ play = function(g)
         window.VideoBox.children("source").attr('src', path + '5.mp4');
         window.VideoBox.show();
         window.VideoBox.trigger('load');
-        subStep=7;
+        g.subStep=7;
       }
       break;
     case 6:
       if (g.Pheromones == 0)
       {
-        subStep++;
+        g.subStep++;
         play(g);
       }
       else
@@ -70,7 +70,7 @@ play = function(g)
         window.ValidBtn.show();
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
-        subStep=7;
+        g.subStep=7;
       }
       play(g);
       break;
