@@ -15,7 +15,7 @@ play = function(g)
     case 2:
       if (window.Game.Mentor == 'Olivia')
       {
-        window.Game.Chastety = true;
+        window.Game.Chastity = true;
       }
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
