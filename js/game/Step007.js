@@ -49,6 +49,7 @@ function selectMentor (m)
 
 function rollMentor (r)
 {
+  HideAll();
   window.Info.append('You roll :' + r + '<br />');
   switch (r)
   {
@@ -85,7 +86,6 @@ function rollMentor (r)
 }
 
 RollDiceClick = function () {
-    HideAll();
     var roll = rollDice(20);
     rollMentor(roll);
 }
