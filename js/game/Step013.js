@@ -13,6 +13,10 @@ play = function(g)
       buildMentorCombo();
       break;
     case 2:
+      if (window.Game.Mentor == 'Olivia')
+      {
+        window.Game.Chastety = true;
+      }
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
       window.Info.append('Your mentor is ' + window.Game.Mentor + '.<br />');
@@ -29,6 +33,8 @@ play = function(g)
 
 function buildMentorCombo (r)
 {
+  window.ImgBox.attr('src', path + g.subStep + '.jpg');
+  window.ImgBox.show();
   window.ComboBox.empty();
   window.ComboBox.append('<option value="Faith">Faith</option>');
   window.ComboBox.append('<option value="Emily">Emily</option>');

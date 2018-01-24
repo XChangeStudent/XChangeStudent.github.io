@@ -26,4 +26,5 @@ function Game ()
     this.Orgasm = 0;
 
     this.Mentor = '';
+    this.Chastety = false;
 }
