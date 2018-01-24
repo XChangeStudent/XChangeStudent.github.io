@@ -77,7 +77,7 @@ play = function(g)
 function buildJobChoice(g)
 {
   HideAll();
-  window.ImgBox.attr('src', path + g.subStep + '.png');
+  window.ImgBox.attr('src', path + g.subStep + '.jpg');
   window.ImgBox.show();
   window.ComboBox.empty();
   if (g.Mentor == 'Faith')

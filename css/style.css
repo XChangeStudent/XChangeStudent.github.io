@@ -46,8 +46,18 @@ html, body {
 
 #gameMenu
 {
+  margin-top: 100px;
+}
+
+#importMenu
+{
   margin-top: 50px;
 }
+
+#Import {
+  margin-left: 100px
+}
+
 
 .gameBtn {
   width: 190px;
