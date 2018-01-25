@@ -38,6 +38,7 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      break;
     default:
       alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
       break;
