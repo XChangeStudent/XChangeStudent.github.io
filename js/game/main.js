@@ -17,9 +17,9 @@ function prepareGame(jQuery)
       if (window.Game)
         alert(window.localStorage['XChangeSave']);
     });
-    ("#Import").click(function()
+    $("#Import").click(function()
     {
-      window.localStorage['XChangeSave']=prompt("Please enter your JSON save");
+      window.localStorage['XChangeSave'] = prompt("Please enter your JSON save");
     });
     InitSelector();
 
