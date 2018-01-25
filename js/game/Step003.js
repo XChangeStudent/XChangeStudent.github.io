@@ -45,7 +45,7 @@ RollDiceClick = function () {
   switch (roll)
   {
       case 1:
-        window.Game.Method = 'Condom';
+        window.Game.Method = 'CondomFail';
         window.Info.append('Bad luck for you... all left is condom if you want to use it after all.<br />');
         src = path + '2.mp4';
         window.Game.subStep++;
