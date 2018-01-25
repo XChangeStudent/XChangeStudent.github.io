@@ -27,4 +27,6 @@ function Game ()
 
     this.Mentor = '';
     this.Chastity = false;
+
+    this.withVeronica = false;
 }
