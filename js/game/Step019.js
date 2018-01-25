@@ -8,7 +8,6 @@ play = function(g)
     MustChangeStep(1);
     return;
   }
-  DenialSolo
   switch (g.subStep)
   {
     case 1:
