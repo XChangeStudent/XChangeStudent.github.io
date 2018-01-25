@@ -15,6 +15,7 @@ play = function(g)
       window.ValidBtn.show();
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
+      break;
     case 2:
       if(g.bodyType != 'Standard')
       {
@@ -82,50 +83,6 @@ play = function(g)
     }
 };
 
-function buildRollQualif(g)
-{
-  window.ImgBox.attr('src', path + g.subStep + '.png');
-  window.ImgBox.show();
-  var roll = rollDice(20);
-  window.Info.append('Your roll is ' + roll + '.<br />');
-  if (g.bodyType == 'Fit')
-  {
-    roll = roll + 12;
-    window.Info.append('You got a fit body so your roll is up by 12 and is now ' + roll + '<br />');
-  }
-  if (g.ReducedSleep)
-  {
-    roll = roll + 5;
-    window.Info.append('You got reduced sleep feature so your roll is up by 5 and is now ' + roll + '<br />');
-  }
-  window.Info.show();
-
-  if (roll > 20)
-    roll = 20;
-
-  switch (roll)
-  {
-    case 1: case 2: case 3: case 4: case 5: case 6: case 7: case 8: case 9:
-      window.Game.Job = '';
-      MustChangeStep(1)
-      break;
-    case 10: case 11: case 12: case 13: case 14: case 15:
-      window.ValidBtn.html('Persuade the coach');
-      window.ValidBtn.show();
-      window.CancelBtn.html('Give up this job');
-      window.CancelBtn.show();
-      break;
-    case 16: case 17: case 18: case 19: case 20:
-      g.subStep++;
-      window.ValidBtn.html('Next');
-      window.ValidBtn.show();
-      break;
-    default:
-      alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
-      break;
-    }
-}
-
 CancelBtnClick = function () {
   if(window.Game.subStep < 6)
   {
@@ -139,6 +96,6 @@ CancelBtnClick = function () {
 }
 
 ValidBtnClick = function () {
-  if (!MustChangeStep(7))
+  if (!MustChangeStep(9))
     play(window.Game);
 }
