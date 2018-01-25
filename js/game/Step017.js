@@ -17,6 +17,7 @@ play = function(g)
       window.ValidBtn.show();
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
+      break;
     case 2:
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
