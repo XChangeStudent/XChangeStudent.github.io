@@ -21,11 +21,8 @@ play = function(g)
         window.CancelBtn.html('Professional');
         window.CancelBtn.show();
       }
-      else
-      {
-        window.ValidBtn.html('Oral');
-        window.ValidBtn.show();
-      }
+      window.ValidBtn.html('Oral');
+      window.ValidBtn.show();
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
       break;
