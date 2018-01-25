@@ -34,7 +34,10 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
-      g.subStep = 9;
+      if (g.subStep == 5)
+      {
+        g.subStep = 9;
+      }
       break;
     case 6: case 9:
       window.ValidBtn.html('Next');
