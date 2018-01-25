@@ -39,7 +39,6 @@ play = function(g)
         window.ValidBtn.show();
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
-        g.subStep++;
       }
       break;
     case 5:
