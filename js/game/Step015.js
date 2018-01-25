@@ -72,7 +72,6 @@ play = function(g)
         window.ImgBox.show();
         g.subStep=7;
       }
-      play(g);
       break;
     case 7:
       window.ValidBtn.html('Next');
