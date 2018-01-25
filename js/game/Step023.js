@@ -67,7 +67,7 @@ play = function(g)
 };
 
 CancelBtnClick = function () {
-  if (g.Submissive > 0)
+  if (window.Game.Submissive > 0)
   {
     window.Game.subStep = 6;
   }
