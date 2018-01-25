@@ -47,6 +47,7 @@ play = function(g)
       window.ValidBtn.show();
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
+      g.withAndrew = true;
       break;
     default:
       alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);

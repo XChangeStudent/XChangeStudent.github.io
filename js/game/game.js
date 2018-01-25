@@ -29,4 +29,5 @@ function Game ()
     this.Chastity = false;
 
     this.withVeronica = false;
+    this.withAndrew = false;
 }
