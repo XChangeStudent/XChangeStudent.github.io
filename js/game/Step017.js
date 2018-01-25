@@ -45,7 +45,7 @@ play = function(g)
 };
 
 CancelBtnClick = function () {
-  g.subStep = 4;
+  window.Game.subStep = 4;
   play(window.Game);
 }
 
