@@ -90,7 +90,7 @@ CancelBtnClick = function () {
   }
   else
   {
-    g.Job = '';
+    window.Game.Job = '';
     MustChangeStep(1);
   }
 }
