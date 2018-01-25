@@ -20,7 +20,7 @@ play = function(g)
     case 3:
       if (g.Method == 'Condom')
       {
-        window.Info.append('You was on condom but your client dosn\'t care. You can start taking pill or do nothing. If you do nothing it will be considere you no longer have any contraception method.<br />');
+        window.Info.append('You was on condom but your client doesn\'t care. You can start taking pill or do nothing. If you do nothing it will be considere you no longer have any contraception method.<br />');
         window.Info.show();
         window.UseCombo.html('Start Taking Pill');
         window.UseCombo.show();
@@ -50,13 +50,13 @@ play = function(g)
 };
 
 UseComboClick = function () {
-  g.Method = 'Pill';
+  window.Game.Method = 'Pill';
   if (!MustChangeStep(4))
     play(window.Game);
 }
 
 CancelBtnClick = function () {
-  g.Method = 'None';
+  window.Game.Method = 'None';
   if (!MustChangeStep(4))
     play(window.Game);
 }
