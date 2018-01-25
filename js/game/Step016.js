@@ -86,7 +86,7 @@ play = function(g)
 CancelBtnClick = function () {
   if(window.Game.subStep < 6)
   {
-    play(g);
+    play(window.Game);
   }
   else
   {
