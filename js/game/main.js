@@ -12,6 +12,15 @@ function prepareGame(jQuery)
     {
       LoadGame();
     });
+    $("#Export").click(function()
+    {
+      if (window.Game)
+        alert(window.localStorage['XChangeSave']);
+    });
+    ("#Import").click(function()
+    {
+      window.localStorage['XChangeSave']=prompt("Please enter your JSON save");
+    });
     InitSelector();
 
     loadScriptForGame('game.js', function(){
