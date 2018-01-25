@@ -3,7 +3,7 @@ var path = 'img/Step' + padZero(window.Game.step, window.Padding)+'/';
 play = function(g)
 {
   HideAll();
-  if (g.Job != 'Fitness')
+  if (g.Job != 'Engineering')
   {
     MustChangeStep(1);
     return;
