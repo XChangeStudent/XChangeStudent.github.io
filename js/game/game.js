@@ -15,6 +15,7 @@ function Game ()
 
     this.Method = 'None';
     /*
+      None
       CondomFail
       Condom
       Pill
@@ -54,4 +55,14 @@ function Game ()
     this.withVeronica = false;
     this.withAndrew = false;
     this.withMistress = false;
+
+    this.neighborOne = '';
+    this.neighborTwo = '';
+    /*
+      Jerk
+      Player
+      Nerd
+      Thrill
+      Regular
+    */
 }

@@ -138,7 +138,7 @@ function HideAll()
 
 
 MustChangeStep = function (n) {
-  if(window.Game.subStep == n)
+  if(window.Game.subStep >= n)
   {
     window.Game.subStep = 1;
     window.Game.step++;
