@@ -4,8 +4,23 @@ function Game ()
     this.subStep = 1;
 
     this.bodyType = 'Standard';
+    /*
+      Standard
+      Plus-size
+      Petite
+      Fit
+    */
+
     this.sideEffectToRoll = 0;
+
     this.Method = 'None';
+    /*
+      CondomFail
+      Condom
+      Pill
+      PillImplant
+      Implant'
+    */
 
     this.NoBodyHair = false;
     this.WeightControl = false;
@@ -26,8 +41,17 @@ function Game ()
     this.Orgasm = 0;
 
     this.Mentor = '';
+    /*
+      Faith
+      Emily
+      Hannah
+      Samantha
+      Olivia
+    */
+
     this.Chastity = false;
 
     this.withVeronica = false;
     this.withAndrew = false;
+    this.withMistress = false;
 }

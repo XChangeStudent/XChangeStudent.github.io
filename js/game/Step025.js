@@ -3,7 +3,7 @@ var path = 'img/Step' + padZero(window.Game.step, window.Padding)+'/';
 play = function(g)
 {
   HideAll();
-  if (g.Job != 'Emily')
+  if (g.Job != 'Samantha')
   {
     MustChangeStep(1);
     return;
@@ -13,38 +13,40 @@ play = function(g)
     case 1:
       if (g.Submissive > 0)
       {
-        window.CancelBtn.html('Next');
-        window.CancelBtn.show();
+        window.ValidBtn.html('Submissive');
+        window.ValidBtn.show();
       }
-      else if (g.Oral == 0)
+      else
       {
-        window.CancelBtn.html('Professional');
+        window.ValidBtn.html('Unsure');
+        window.ValidBtn.show();
+        window.CancelBtn.html('Girl');
         window.CancelBtn.show();
+        window.UseCombo.html('Guy');
+        window.UseCombo.show();
       }
-      window.ValidBtn.html('Oral');
-      window.ValidBtn.show();
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
       break;
-    case 2:
-      window.ValidBtn.html('Next');
-      window.ValidBtn.show();
-      window.ImgBox.attr('src', path + g.subStep + '.jpg');
-      window.ImgBox.show();
-      break;
-    case 3:
-      window.ValidBtn.html('Next');
-      window.ValidBtn.show();
-      window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
-      window.VideoBox.show();
-      window.VideoBox.trigger('load');
-      g.subStep = 6;
-    break;
-    case 4:
-      window.ValidBtn.html('Next');
-      window.ValidBtn.show();
-      window.ImgBox.attr('src', path + g.subStep + '.jpg');
-      window.ImgBox.show();
+    case 2: case 3: case 4:
+      if (g.subStep == 2 && g.Submissive == 0)
+      {
+        g.subStep = 5;
+        play(g);
+      }
+      else
+      {
+        if (g.Submissive > 0)
+        {
+          g.withMistress = true;
+        }
+        window.ValidBtn.html('Next');
+        window.ValidBtn.show();
+        window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
+        window.VideoBox.show();
+        window.VideoBox.trigger('load');
+        g.subStep = 6;
+      }
     break;
     case 5: case 6:
       window.ValidBtn.html('Next');
@@ -52,10 +54,6 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
-      if (g.subStep == 5)
-      {
-        g.subStep++;
-      }
       break;
     default:
       alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);
@@ -64,16 +62,15 @@ play = function(g)
 };
 
 CancelBtnClick = function () {
-  if (window.Game.Submissive > 0)
-  {
-    window.Game.subStep = 6;
-  }
-  else
-  {
-    window.Game.subStep = 4;
-  }
+  window.Game.subStep = 3;
   play(window.Game);
 }
+
+UseComboClick = function () {
+  window.Game.subStep = 4;
+  play(window.Game);
+}
+
 
 ValidBtnClick = function () {
   if (!MustChangeStep(6))
