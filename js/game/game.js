@@ -70,4 +70,7 @@ function Game ()
     this.MentorNoNeighbor = false;
     this.HelpfulNeighbor = false;
     this.ChosenNeighbor = '';
+
+    this.AcademicPoint = 0;
+    this.FunPoint = 0;
 }
