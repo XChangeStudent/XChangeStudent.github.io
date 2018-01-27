@@ -12,6 +12,7 @@ play = function(g)
       {
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
+        g.MentorNoNeighbor = true;
         if (g.Method == 'CondomFail' || g.Method == 'Condom' || g.Method == 'Pill')
         {
           g.Method = 'None';
@@ -31,6 +32,7 @@ play = function(g)
         window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
         window.VideoBox.show();
         window.VideoBox.trigger('load');
+        g.MentorNoNeighbor = true;
       }
       else
       {
@@ -43,6 +45,7 @@ play = function(g)
       {
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
+        g.MentorNoNeighbor = true;
       }
       else
       {
@@ -55,6 +58,7 @@ play = function(g)
       {
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
+        g.MentorNoNeighbor = true;
       }
       else
       {
@@ -67,6 +71,7 @@ play = function(g)
       {
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
+        g.MentorNoNeighbor = true;
       }
       else
       {

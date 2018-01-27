@@ -65,4 +65,8 @@ function Game ()
       Thrill
       Regular
     */
+
+    this.MentorNoNeighbor = false;
+    this.HelpfulNeighbor = false;
+    this.ChosenNeighbor = false;
 }
