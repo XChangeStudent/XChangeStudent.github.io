@@ -68,5 +68,5 @@ function Game ()
 
     this.MentorNoNeighbor = false;
     this.HelpfulNeighbor = false;
-    this.ChosenNeighbor = false;
+    this.ChosenNeighbor = '';
 }
