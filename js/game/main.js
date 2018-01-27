@@ -20,7 +20,11 @@ function prepareGame(jQuery)
       }
     });
     InitSelector();
+    NewGame();
+}
 
+function NewGame()
+{
     loadScriptForGame('game.js', function(){
       console.log('On a load game.js');
       window.Game = new Game();

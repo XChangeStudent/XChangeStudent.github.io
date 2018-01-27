@@ -55,6 +55,7 @@ function Game ()
     this.withVeronica = false;
     this.withAndrew = false;
     this.withMistress = false;
+    this.withJosh = false;
 
     this.neighborOne = '';
     this.neighborTwo = '';

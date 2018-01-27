@@ -59,9 +59,21 @@ play = function(g)
     }
 };
 
-CancelBtnClick = function () {
-  g.HelpfulNeighbor = true;
+UseComboClick = function () {
+  window.Game.ChosenNeighbor = window.ComboBox.val();
   MustChangeStep(1);
+}
+
+CancelBtnClick = function () {
+    HideAll();
+    window.ImgBox.show();
+    window.Game.HelpfulNeighbor = true;
+    window.ComboBox.empty();
+    window.ComboBox.append('<option value="'+g.neighborOne+'">'+g.neighborOne+'</option>');
+    window.ComboBox.append('<option value="'+g.neighborTwo+'">'+g.neighborTwo+'</option>');
+    window.ComboBox.show();
+    window.UseCombo.html('Choose a neighbor to have fun with');
+    window.UseCombo.show();
 }
 
 ValidBtnClick = function () {
