@@ -16,6 +16,7 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      g.fuckCount++;
       break;
     case 3:
       if (g.Method == 'Condom')
@@ -38,6 +39,7 @@ play = function(g)
         window.ValidBtn.html('Next');
         window.ValidBtn.show();
       }
+      g.fuckCount++;
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');

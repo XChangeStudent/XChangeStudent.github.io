@@ -38,6 +38,7 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      g.fuckCount++;
       g.subStep = 6;
     break;
     case 4:
@@ -55,6 +56,9 @@ play = function(g)
       if (g.subStep == 5)
       {
         g.subStep++;
+      }
+      else {        
+        g.fuckCount++;
       }
       break;
     default:

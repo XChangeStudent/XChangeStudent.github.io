@@ -30,6 +30,7 @@ play = function(g)
       window.ImgBox.show();
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
+      g.gangBangCount++;
       break;
     default:
       alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);

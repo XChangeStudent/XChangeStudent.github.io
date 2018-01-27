@@ -30,6 +30,7 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      g.fuckCount++;
       g.subStep = 6;
       break;
     case 4: case 5: case 6:

@@ -62,6 +62,7 @@ play = function(g)
     case 9:
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
+      g.fuckCount++;
       window.VideoBox.trigger('load');
       break;
     default:

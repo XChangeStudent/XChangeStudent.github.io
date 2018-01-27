@@ -35,6 +35,7 @@ play = function(g)
       window.VideoBox.trigger('load');
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
+      g.fuckCount++;
       g.subStep=5;
       break;
     case 4:
@@ -50,6 +51,7 @@ play = function(g)
       window.ImgBox.show();
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
+      g.fuckCount++;
       g.subStep=5;
       break;
     default:

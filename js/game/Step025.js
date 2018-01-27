@@ -40,6 +40,8 @@ play = function(g)
         {
           g.withMistress = true;
         }
+        if (g.subStep == 4)
+          g.fuckCount++;
         window.ValidBtn.html('Next');
         window.ValidBtn.show();
         window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
@@ -49,6 +51,8 @@ play = function(g)
       }
     break;
     case 5: case 6:
+      if (g.subStep == 6)
+        g.fuckCount++;
       window.ValidBtn.html('Next');
       window.ValidBtn.show();
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');

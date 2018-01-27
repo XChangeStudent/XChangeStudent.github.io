@@ -19,6 +19,7 @@ play = function(g)
           window.Info.append('You don\'t have contraception anymore');
           window.Info.show();
         }
+        g.fuckCount++;
       }
       else
       {

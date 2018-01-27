@@ -19,6 +19,7 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + '2.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      g.fuckCount++;
       break;
     case 3:
       window.ValidBtn.html('Next');
@@ -64,7 +65,8 @@ play = function(g)
         play(g);
       }
       else
-      {
+      {        
+        g.gangBangCount++;
         window.ValidBtn.html('Next');
         window.ValidBtn.show();
         window.ImgBox.attr('src', path + g.subStep + '.jpg');

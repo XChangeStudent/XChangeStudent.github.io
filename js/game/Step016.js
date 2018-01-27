@@ -41,6 +41,7 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + '3.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      g.fuckCount++;
       g.subStep = 9;
       break;
     case 4:
@@ -76,6 +77,8 @@ play = function(g)
       window.VideoBox.children("source").attr('src', path + g.subStep  +'.mp4');
       window.VideoBox.show();
       window.VideoBox.trigger('load');
+      if (g.subStep == 9)
+        g.fuckCount++;
       break;
     default:
       alert('Error! Please create an issue on github with these info: Step=' + g.Step + ' subStep=' + g.subStep);

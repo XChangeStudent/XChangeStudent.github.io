@@ -24,6 +24,7 @@ play = function(g)
     case 6:
       window.ImgBox.attr('src', path + g.subStep + '.gif');
       window.ImgBox.show();
+      g.fuckCount++;
     case 4:
       if (!g.Chastity)
       {

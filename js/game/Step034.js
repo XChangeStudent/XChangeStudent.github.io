@@ -23,11 +23,13 @@ play = function(g)
         window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
         window.VideoBox.show();
         window.VideoBox.trigger('load');
+        g.fuckCount++;
       }
       break;
     case 2:
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
+      g.gangBangCount++;
       break;
     case 3:
       if (g.ChosenNeighbor != 'Player')
@@ -37,6 +39,7 @@ play = function(g)
       }
       else
       {
+        g.fuckCount++;
         window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
         window.VideoBox.show();
         window.VideoBox.trigger('load');
@@ -45,6 +48,7 @@ play = function(g)
     case 4:
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
+      g.fuckCount++;
       window.VideoBox.trigger('load');
       break;
     case 5:
@@ -66,6 +70,7 @@ play = function(g)
     case 8:
       window.VideoBox.children("source").attr('src', path + g.subStep + '.mp4');
       window.VideoBox.show();
+      g.fuckCount++;
       window.VideoBox.trigger('load');
       break;
     case 9:
@@ -91,11 +96,13 @@ play = function(g)
       }
       else
       {
+        g.fuckCount++;
         window.ImgBox.attr('src', path + g.subStep + '.jpg');
         window.ImgBox.show();
       }
       break;
     case 13: case 14:
+      g.fuckCount++;
       window.ImgBox.attr('src', path + g.subStep + '.jpg');
       window.ImgBox.show();
       g.withJosh = true;

@@ -50,6 +50,10 @@ function Game ()
       Olivia
     */
 
+    this.fuckCount = 0;
+    this.gangBangCount = 0;
+
+
     this.Chastity = false;
 
     this.withVeronica = false;
